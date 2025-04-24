@@ -1,1 +1,79 @@
+@font-face {
+    font-family: 'Blackletter1';
+    src: url('assets/fonts/Charakterny.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Blackletter2';
+    src: url('assets/fonts/Aporrheton.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blackletter3';
+    src: url('assets/fonts/Grafik.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blackletter4';
+    src: url('assets/fonts/OldEnglishFive.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Blackletter5';
+    src: url('assets/fonts/Scarbes.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    overflow-x:hidden;
+}
+
+.container {
+    display:flex;
+    width:100vw;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+}
+
+h1 {
+    font-family: Blackletter3;
+    font-size:250px;
+    font-weight:normal;
+}
+
+#background::before {
+    background-color: #FFFFFF66;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index:0;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#background img {
+    display: block;
+    width:100%;
+    height:auto;
+}
