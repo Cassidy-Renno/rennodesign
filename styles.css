@@ -32,6 +32,55 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Light.ttf');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-UltraBold.ttf');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-BoldIt.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-LightIt.ttf');
+    font-weight: light;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-UltraBdIt.ttf');
+    font-weight: bolder;
+    font-style: italic;
+}
+
 body {
     width:100%;
     height:100%;
@@ -40,18 +89,40 @@ body {
     overflow-x:hidden;
 }
 
+h1 {
+    font-family: Blackletter3;
+    font-size:10vw;
+    font-weight:normal;
+}
+
 .container {
     display:flex;
+    flex-direction:column;
     width:100vw;
     height:100vh;
     align-items:center;
     justify-content:center;
 }
 
-h1 {
-    font-family: Blackletter3;
-    font-size:250px;
-    font-weight:normal;
+.screenWideButton {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:auto;
+    padding:2.5%;
+    background-color:black;
+}
+
+.screenWideButton button {
+    width:25vw;
+    height:15vh;
+    font-family: Merriweather;
+    font-size:3vw;
+}
+
+#title {
+    display:flex;
 }
 
 #background::before {
