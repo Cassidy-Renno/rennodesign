@@ -7,19 +7,109 @@
   <title>Cassidy Renno Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="randomFonts.css">
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="shop.js"></script>
+  <script type="module" src="global.js"></script>
+  <script type="module" src="shop.js"></script>
 </head>
 
-<body>
+<body style="background-color:#F06543">
   
+<div id="inbetween"></div>
+
 <div class="container">
-  
+
+  <div class="homeButtonContainer fadein"><div class="homeButton" id="shopHome" data-link="index.html"></div><img src="assets/images/logo.svg"></div>
+
+  <div class="shiftTitleContainer fadein"><div class="shiftTitle" id="shopTitle" style="color:white;opacity:0;transform: scale(0);font-size:5vw;"><h1>Shop</h1></div></div>
+  <div id="artContainer" class="itemContainer">
+    <div class="holder">
+      <div class="artPreview"
+      id="VOID"
+      data-open="false"
+      data-description="Face the void on the daily with this poster.">
+        <img class="thumbnail" src="assets/images/previews/VOID-Thumbnail.png">
+        <div class="artLabel">VOID</div>
+        <a class = "buyButton" target="_blank" href="https://square.link/u/cZw2qZHy">Buy now</a>
+      </div>
+    </div>
+    
+    <div class="holder">
+      <div class="artPreview"
+      id="SINE"
+      data-open="false"
+      data-description="Get mathematical when you see this poster on your wall.">
+        <img class="thumbnail" src="assets/images/previews/SINE-Thumbnail.png">
+        <div class="artLabel">SINE</div>
+        <a class = "buyButton" target="_blank" href="https://square.link/u/NtxOBqWo">Buy now</a>
+      </div>
+    </div>
+
+    <div class="holder">
+      <div class="artPreview"
+      id="COALESCENCE"
+      data-open="false"
+      data-description="Come one, come all, and coalesce with this design!">
+        <img class="thumbnail" src="assets/images/previews/COALESCENCE-Thumbnail.png">
+        <div class="artLabel">COALESCENCE</div>
+        <a class = "buyButton" target="_blank" href="https://square.link/u/fSs0t8NQ">Buy now</a>
+      </div>
+    </div>
+
+    <div class="holder">
+      <div class="artPreview"
+      id="COMPELLED"
+      data-open="false"
+      data-description="Do you feel compelled to purchase this poster?">
+        <img class="thumbnail" src="assets/images/previews/COMPELLED-Thumbnail.png">
+        <div class="artLabel">COMPELLED</div>
+        <a class = "buyButton" target="_blank" href="https://square.link/u/coasWk7H">Buy now</a>
+      </div>
+    </div>
+
+    <div class="holder">
+      <div class="artPreview"
+      id="ALTERATIONS"
+      data-open="false"
+      data-description="Make a beneficial alteration to your space with this poster.">
+        <img class="thumbnail" src="assets/images/previews/ALTERATIONS-Thumbnail.png">
+        <div class="artLabel">ALTERATIONS</div>
+        <a class = "buyButton" target="_blank" href="https://square.link/u/2NIAh6Ma">Buy now</a>
+    </div></div>
+    
+
+    <div class="holder">
+      <div class="artPreview"
+      id="STEAMPOWERED"
+      data-open="false"
+      data-description="Never run out of steam with this poster on your wall.">
+        <img class="thumbnail" src="assets/images/previews/STEAMPOWERED-Thumbnail.png">
+        <div class="artLabel">STEAMPOWERED</div>
+        <a class = "buyButton" target="_blank" href="https://square.link/u/7CuDWGpR">Buy now</a>
+      </div>
+    </div>
+
+    <div class="holder">
+      <div class="artPreview"
+      id="BLACK-SUN"
+      data-open="false"
+      data-description="Cast some shade with this design.">
+        <img class="thumbnail" src="assets/images/previews/BLACK-SUN-Thumbnail.png">
+        <div class="artLabel">BLACK SUN</div>
+        <a class = "buyButton" target="_blank" href="https://square.link/u/DplC4vLX">Buy now</a>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <script>
 </script>
 
 </body>
+
+<footer>
+  © 2025 Cassidy Renno. All rights reserved. Artwork and designs displayed on this site are the exclusive property of Cassidy Renno. Unauthorized reproduction or distribution of any prints, images, or content is strictly prohibited.
+</footer>
 </html>

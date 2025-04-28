@@ -7,15 +7,32 @@
   <title>About Cassidy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="randomFonts.css">
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="javascript.js"></script>
+  <script type="module" src="global.js"></script>
+  <script type="module" src="about.js"></script>
 </head>
 
-<body>
+<body style="background-color:#36393B;">
   
 <div class="container">
+
+  <div class="homeButtonContainer fadein"><div class="homeButton" id="shopHome" data-link="index.html"></div><img src="assets/images/logo.svg"></div>
+
+  <div class="shiftTitleContainer fadein"><div class="shiftTitle" id="aboutTitle" style="color:white;font-size:5vw;"><h1>About Me</h1></div></div>
   
+  <div id="aboutSection" style="width:100vw" class="fadein">
+    <div id="profileContainer">
+      <img src="assets/images/profile/profile1.jpg" id="profile1" class="profile">
+      <img src="assets/images/profile/profile2.jpg" id="profile2" class="profile">
+      <img src="assets/images/profile/profile3.jpg" id="profile3" class="profile">
+    </div>
+  
+    <div id="aboutText"><p>Hi! I'm Cassidy, I'm the guy who made all the stuff you see here. I mainly do my work with javascript, p5.js, photoshop, illustrator, and whatever other tools I can get my hands on. I have an interest in design (clearly), linguistics, calligraphy, math, computer science, poetry, and writing. I was on varsity wrestling for my senior year in high school (top image), and taught p5.js at my school's TECH Club (bottom image).</p></div>
+  </div>
+  
+
 </div>
 
 <script>

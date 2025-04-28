@@ -1,36 +1,110 @@
 @font-face {
     font-family: 'Blackletter1';
-    src: url('assets/fonts/Charakterny.otf') format('opentype');
+    src: url('assets/fonts/Charakterny.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Blackletter2';
-    src: url('assets/fonts/Aporrheton.ttf') format('truetype');
+    src: url('assets/fonts/Aporrheton.ttf');
     font-weight:normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Blackletter3';
-    src: url('assets/fonts/Grafik.ttf') format('truetype');
+    src: url('assets/fonts/Grafik.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Blackletter4';
-    src: url('assets/fonts/OldEnglishFive.ttf') format('truetype');
+    src: url('assets/fonts/OldEnglishFive.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Blackletter5';
-    src: url('assets/fonts/Scarbes.otf') format('opentype');
+    src: url('assets/fonts/Scarbes.otf');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Light.ttf');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-UltraBold.ttf');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-BoldIt.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-LightIt.ttf');
+    font-weight: light;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('assets/fonts/Merriweather/Merriweather-UltraBdIt.ttf');
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('assets/fonts/Cinzel/Cinzel-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gmarket';
+    src: url('assets/fonts/Gmarket/GmarketSansBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('assets/fonts/BebasNeue-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    overflow-anchor: none;
+  }
 
 body {
     width:100%;
@@ -40,29 +114,274 @@ body {
     overflow-x:hidden;
 }
 
-.container {
-    display:flex;
-    width:100vw;
-    height:100vh;
-    align-items:center;
-    justify-content:center;
-}
-
 h1 {
-    font-family: Blackletter3;
-    font-size:250px;
     font-weight:normal;
 }
 
-#background::before {
-    background-color: #FFFFFF66;
-    content: "";
+h2 {
+    font-size:5vw;
+    z-index: 1;
+}
+
+body {
+    height: auto;
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
+    width:100vw;
+    height:auto;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+}
+
+.shatterButton {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    margin:5vw;
+}
+
+.shatterButtonBG {
+    z-index: 0;
     position: absolute;
-    top: 0;
-    left: 0;
     width:100%;
     height:100%;
+}
+
+.fragment {
+    padding:0;
+    margin:0;
+    position:absolute;
+    z-index: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artPreview {
+    position: relative; /* important */
+    overflow: hidden;
+    border-radius: 40px;
+    width: 20vw;
+    height: auto;
+    overflow: hidden;
+    transform: translateY(50px);
+    opacity: 0;
+    cursor:pointer;
+}
+
+.artPreview .buyButton {
+    display: none;
+}
+
+.artPreview[data-open="true"] .buyButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    background: #FFF;
+    color: #F06543;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:3vw;
+    font-family: Bebas;
+    border-radius: 10px;
+    z-index: 2;
+    height:80%;
+    width:16%;
+    box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 0.6);
+}
+
+.artPreview[data-open="true"] .buyButton:hover {
+    background: #F06543;
+    color: #FFF;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.6);
+}
+
+.artPreview::after {
+    content: "";
+    position: absolute;
+    top: 0;   left: 0;
+    right: 0; bottom: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.artPreview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position:realtive;
     z-index:0;
+}
+
+.artLabel {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 5vw;
+    background-color: #36393B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Bebas;
+    font-size: 2vw;
+    z-index: 2;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.6);
+}
+
+.thumbnailHolder {
+    overflow: hidden;
+}
+
+.itemContainer {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: auto; 
+    gap: 3vw;  
+    margin: 3vw;
+}
+
+.shiftTitleContainer {
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:25vw;
+    z-index:0;
+}
+
+.shiftTitle {
+    display:flex;
+    padding:0;
+    margin:0;
+    z-index:10;
+    font-size:5vw;
+    font-family:Bebas;
+}
+
+.homeButtonContainer {
+    position:absolute;
+    display:flex;
+    width:6vw;
+    height:6vw;
+    top:3vw;
+    left:3vw;
+    align-items: center;
+    justify-content: center;
+    z-index:0;
+}
+
+.homeButtonContainer div {
+    position: absolute;
+    width:4vw;
+    z-index:1;
+    border-radius:50%;
+    background-color:white;
+    width:6vw;
+    height:6vw;
+}
+
+.homeButtonContainer img {
+    position: relative;
+    width:4vw;
+    z-index:1;
+    pointer-events:none;
+}
+
+.homeButtonContainer.fixed {
+    position: fixed;   /* already what your JS does */
+    top: 3vw; left: 3vw;
+    z-index: 999;      /* above everything else */
+}
+
+.homeButtonContainer.fixed img {
+  z-index: 1000;
+}
+
+.fadein {
+    opacity:0;
+    transform: scale(0);
+}
+
+.profile {
+    width:100%;
+    height:10vw;
+    object-fit: cover;
+    padding:1vw;
+}
+
+#aboutSection {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1vw;
+    width: 100vw;
+    height:50vw;
+}
+
+#aboutText {
+    font-size: 1vw;
+    color:white;
+    width:25vw;
+    padding: 1vw;
+}
+
+#profile1 {
+    object-position: 0% 0%;
+}
+
+#profile2 {
+    object-position: 0% 15%;
+}
+
+#profile3 {
+    object-position: 0% 15%;
+}
+
+#profileContainer {
+    display:block;
+    width:25vw;
+    height:auto;
+}
+
+#inbetween {
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0);
+    opacity:0;
+    pointer-events:none;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+#logo {
+    padding:2.5vw;
+}
+
+#shopButton {
+    width:25vw;
+    height:15vh;
+    font-family: Bebas;
+    font-size:3vw;
+    margin-right:auto;
 }
 
 #background {
@@ -76,4 +395,20 @@ h1 {
     display: block;
     width:100%;
     height:auto;
+}
+
+#demoButton {
+    font-family:Bebas;
+    font-size:3vw;
+    margin-left:auto;
+}
+
+#aboutButton {
+    font-family:Bebas;
+    font-size:3vw;
+    margin-right:auto;
+}
+
+#mainTitle {
+    z-index:10;
 }
