@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'OTF-1';
+    src: url('assets/fonts/randoms/1.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-2';
+    src: url('assets/fonts/randoms/2.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-3';
+    src: url('assets/fonts/randoms/3.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-4';
+    src: url('assets/fonts/randoms/4.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-5';
+    src: url('assets/fonts/randoms/5.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-6';
+    src: url('assets/fonts/randoms/6.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-7';
+    src: url('assets/fonts/randoms/7.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-8';
+    src: url('assets/fonts/randoms/8.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-9';
+    src: url('assets/fonts/randoms/9.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-10';
+    src: url('assets/fonts/randoms/10.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-11';
+    src: url('assets/fonts/randoms/11.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-12';
+    src: url('assets/fonts/randoms/12.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-13';
+    src: url('assets/fonts/randoms/13.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-14';
+    src: url('assets/fonts/randoms/14.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OTF-15';
+    src: url('assets/fonts/randoms/15.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTF-1';
+    src: url('assets/fonts/randoms/1.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-2';
+    src: url('assets/fonts/randoms/2.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-3';
+    src: url('assets/fonts/randoms/3.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-4';
+    src: url('assets/fonts/randoms/4.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-5';
+    src: url('assets/fonts/randoms/5.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-6';
+    src: url('assets/fonts/randoms/6.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-7';
+    src: url('assets/fonts/randoms/7.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-8';
+    src: url('assets/fonts/randoms/8.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-9';
+    src: url('assets/fonts/randoms/9.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-10';
+    src: url('assets/fonts/randoms/10.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-11';
+    src: url('assets/fonts/randoms/11.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-12';
+    src: url('assets/fonts/randoms/12.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-13';
+    src: url('assets/fonts/randoms/13.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-14';
+    src: url('assets/fonts/randoms/14.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-15';
+    src: url('assets/fonts/randoms/15.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-16';
+    src: url('assets/fonts/randoms/16.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-17';
+    src: url('assets/fonts/randoms/17.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-18';
+    src: url('assets/fonts/randoms/18.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-19';
+    src: url('assets/fonts/randoms/19.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-20';
+    src: url('assets/fonts/randoms/20.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-21';
+    src: url('assets/fonts/randoms/21.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-22';
+    src: url('assets/fonts/randoms/22.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-23';
+    src: url('assets/fonts/randoms/23.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-24';
+    src: url('assets/fonts/randoms/24.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-25';
+    src: url('assets/fonts/randoms/25.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-26';
+    src: url('assets/fonts/randoms/26.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTF-27';
+    src: url('assets/fonts/randoms/27.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
