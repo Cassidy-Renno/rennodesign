@@ -121,6 +121,7 @@ h1 {
 h2 {
     font-size:5vw;
     z-index: 1;
+    font-family:Bebas;
 }
 
 body {
@@ -163,7 +164,7 @@ body {
     align-items: center;
 }
 
-.artPreview {
+.preview {
     position: relative; /* important */
     overflow: hidden;
     border-radius: 40px;
@@ -175,11 +176,11 @@ body {
     cursor:pointer;
 }
 
-.artPreview .buyButton {
+.preview .buyButton {
     display: none;
 }
 
-.artPreview[data-open="true"] .buyButton {
+.preview[data-open="true"] .buyButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,13 +204,13 @@ body {
     box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 0.6);
 }
 
-.artPreview[data-open="true"] .buyButton:hover {
+.preview[data-open="true"] .buyButton:hover {
     background: #F06543;
     color: #FFF;
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.6);
 }
 
-.artPreview::after {
+.preview::after {
     content: "";
     position: absolute;
     top: 0;   left: 0;
@@ -220,7 +221,7 @@ body {
     z-index: 1;
 }
 
-.artPreview img {
+.preview img {
     display: block;
     width: 100%;
     height: auto;
@@ -228,7 +229,7 @@ body {
     z-index:0;
 }
 
-.artLabel {
+.label {
     position:relative;
     bottom: 0;
     left: 0;
@@ -407,6 +408,12 @@ body {
     font-family:Bebas;
     font-size:3vw;
     margin-right:auto;
+}
+
+#contactButton {
+    font-family:Bebas;
+    font-size:3vw;
+    margin-left:auto;
 }
 
 #mainTitle {

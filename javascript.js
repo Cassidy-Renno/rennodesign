@@ -37,6 +37,17 @@ $(document).ready(function() {
         "white",
         "")
 
+    makeShatterButton(
+        "contactButton",
+        "30%",
+        "75%",
+        $(".container"),
+        "Contact",
+        "contact.html",
+        "#FFB30F",
+        "white",
+        "")
+
     $(".shatterButton").hover(
         function () {
             
