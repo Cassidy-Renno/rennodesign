@@ -4,12 +4,12 @@ import { animate, scroll, stagger, easeIn, delay, spring} from "https://cdn.jsde
 $(document).ready(function() {
 
     animate(
-        "#artContainer .artPreview",
+        "#artContainer .preview",
         { opacity: 1, y: 0 },
         { duration: 0.5, delay: stagger(0.15)}
     )
 
-    $(".artPreview").hover(function() {
+    $(".preview").hover(function() {
         if($(this).data("open")=="true") return
         
         animate(
@@ -41,7 +41,7 @@ $(document).ready(function() {
         )
     })
 
-    $(".artPreview").click(function(e) {
+    $(".preview").click(function(e) {
         e.stopPropagation();
         const $preview = $(this);
 
@@ -95,11 +95,11 @@ $(document).ready(function() {
             }
         )
 
-        const originalLabel = $preview.find(".artLabel").html()
+        const originalLabel = $preview.find(".label").html()
         console.log($preview.data("description"))
-        $preview.find(".artLabel").html(`<p style="left:40%;position:absolute;width:30%;">${$preview.data("description")}</p>`)
+        $preview.find(".label").html(`<p style="left:40%;position:absolute;width:30%;">${$preview.data("description")}</p>`)
 
-        $preview.find(".artLabel").css({
+        $preview.find(".label").css({
             height: "100%",
             position: "absolute",
             zIndex: "-1"
@@ -130,10 +130,10 @@ $(document).ready(function() {
                 $preview.css({
                   position: "", top: "", left: "", width: "", height: "", zIndex: ""
                 });
-                $preview.find(".artLabel").css({
+                $preview.find(".label").css({
                     position:"relative",zIndex:2,height:"auto"
                 })
-                $preview.find(".artLabel").html(originalLabel)
+                $preview.find(".label").html(originalLabel)
                 $("#inbetween").css({
                     zIndex:-1,
                     pointerEvents:"none",
