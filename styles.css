@@ -102,6 +102,41 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Quivira';
+    src: url('assets/fonts/Quivira.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bistecca';
+    src: url('assets/fonts/Bistecca.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cantata';
+    src: url('assets/fonts/CantataOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baskervald';
+    src: url('assets/fonts/Baskervald/BaskervaldADFStd.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cardo';
+    src: url('assets/fonts/Cardo/Cardo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     overflow-anchor: none;
   }
@@ -121,7 +156,11 @@ h1 {
 h2 {
     font-size:5vw;
     z-index: 1;
-    font-family:Bebas;
+    font-family:'Bebas';
+}
+
+p {
+    font-family: 'Cardo';
 }
 
 body {
@@ -131,7 +170,7 @@ body {
 .container {
     display:flex;
     flex-direction:column;
-    width:100vw;
+    width:100%;
     height:auto;
     align-items:center;
     justify-content:center;
@@ -326,22 +365,33 @@ body {
     width:100%;
     height:10vw;
     object-fit: cover;
-    padding:1vw;
+    padding-top:1vw;
+}
+
+.genPreview {
+    width:90vw;
+    height:20vw;
+    border-radius: 2vw;
 }
 
 #aboutSection {
     display: grid;
-    grid-template-columns: auto 1fr;
+    align-self:center;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1vw;
-    width: 100vw;
+    width: 80vw;      
     height:50vw;
+    justify-self: center;  
+    justify-content: center;
 }
 
 #aboutText {
-    font-size: 1vw;
+    font-size: 1.5vw;
     color:white;
     width:25vw;
     padding: 1vw;
+    hyphens: auto;
+    text-align: justify;
 }
 
 #profile1 {
@@ -356,9 +406,21 @@ body {
     object-position: 0% 15%;
 }
 
+#example1 {
+    object-position: 0% 50%;
+}
+
+#example2 {
+    object-position: 0% 15%;
+}
+
+#example3 {
+    object-position: 0% 60%;
+}
+
 #profileContainer {
     display:block;
-    width:25vw;
+    width:auto;
     height:auto;
 }
 
