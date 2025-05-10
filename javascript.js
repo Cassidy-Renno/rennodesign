@@ -9,8 +9,8 @@ $(document).ready(function() {
         "30%",
         "75%",
         $(".container"),
-        "Shop",
-        "shop.html",
+        "Posters",
+        "posters.html",
         "#F06543",
         "white",
         "")
@@ -20,8 +20,8 @@ $(document).ready(function() {
         "30%",
         "75%",
         $(".container"),
-        "Demos",
-        "demos.html",
+        "Generative",
+        "generative.html",
         "#70C1B3",
         "white",
         "")
